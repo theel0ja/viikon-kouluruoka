@@ -29,13 +29,20 @@ public class MainActivity extends Activity {
 
 
         // Use remote resource
-        mWebView.loadUrl("https://viikon-kouluruoka.theel0ja.info");
+        mWebView.loadUrl("https://viikon-kouluruoka.theel0ja.info/?material&lang=" + java.util.Locale.getDefault().getLanguage());
 
         // Stop local links and redirects from opening in browser instead of WebView
         mWebView.setWebViewClient(new MyAppWebViewClient());
 
         // Use local resource
         // mWebView.loadUrl("file:///android_asset/www/index.html");
+
+        // Error page
+        mWebView.setWebViewClient(new WebViewClient() {
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                mWebView.loadUrl("file:///android_asset/www/nointernet.html");
+            }
+        });
     }
 
     // Prevent the back-button from closing the app
