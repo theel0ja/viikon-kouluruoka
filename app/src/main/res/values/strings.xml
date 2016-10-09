@@ -2,7 +2,5 @@
 <resources>
 
     <string name="app_name">Week\'s School Meal</string>
-    <string name="hello_world" translatable="false">Hello world!</string>
-    <string name="action_settings" translatable="false">Settings</string>
 
 </resources>

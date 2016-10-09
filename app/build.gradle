@@ -6,9 +6,9 @@ android {
     defaultConfig {
         applicationId "info.theel0ja.kouluruoka"
         minSdkVersion 15
-        targetSdkVersion 15
-        versionName '1.0.3.1'
-        versionCode 6
+        targetSdkVersion 24
+        versionName '1.0.4'
+        versionCode 7
     }
     buildTypes {
         release {

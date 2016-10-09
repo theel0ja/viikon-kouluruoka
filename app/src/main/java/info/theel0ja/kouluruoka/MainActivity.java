@@ -2,8 +2,6 @@ package info.theel0ja.kouluruoka;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -27,9 +25,8 @@ public class MainActivity extends Activity {
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-
         // Use remote resource
-        mWebView.loadUrl("https://viikon-kouluruoka.theel0ja.info/?material&lang=" + java.util.Locale.getDefault().getLanguage());
+        mWebView.loadUrl("https://alpha.viikon-kouluruoka.theel0ja.info/?material&lang=" + java.util.Locale.getDefault().getLanguage());
 
         // Stop local links and redirects from opening in browser instead of WebView
         mWebView.setWebViewClient(new MyAppWebViewClient());
@@ -53,27 +50,5 @@ public class MainActivity extends Activity {
         } else {
             super.onBackPressed();
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }
