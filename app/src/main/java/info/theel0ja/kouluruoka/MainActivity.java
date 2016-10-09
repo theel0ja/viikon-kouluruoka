@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
         webSettings.setJavaScriptEnabled(true);
 
         // Use remote resource
-        mWebView.loadUrl("https://alpha.viikon-kouluruoka.theel0ja.info/?material&lang=" + java.util.Locale.getDefault().getLanguage());
+        mWebView.loadUrl("https://viikon-kouluruoka.theel0ja.info/?material&lang=" + java.util.Locale.getDefault().getLanguage());
 
         // Stop local links and redirects from opening in browser instead of WebView
         mWebView.setWebViewClient(new MyAppWebViewClient());
