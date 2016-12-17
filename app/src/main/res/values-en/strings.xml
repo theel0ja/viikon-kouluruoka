@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Week\'s School Meal</string>
+    <string name="about">About the app</string>
+    <string name="elementary_school">Elementary schools</string>
+    <string name="secondary_school">Secondary and high schools</string>
+    <string name="archives">Archives</string>
+    <string name="settings">Settings</string>
+    <string name="select_school">Select school</string>
+    <string name="play_store_btn">Rate on Google Play</string>
+    <string name="version">"Version: "</string>
+    <string name="configure_widget">Configure widget</string>
 </resources>

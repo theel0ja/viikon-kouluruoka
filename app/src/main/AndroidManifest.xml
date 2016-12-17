@@ -1,20 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="info.theel0ja.kouluruoka" >
+    package="info.theel0ja.kouluruoka">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="Viikon kouluruoka"
-        android:theme="@android:style/Theme.NoTitleBar" >
-        <activity
-            android:name="info.theel0ja.kouluruoka.MainActivity"
-            android:label="@string/app_name" >
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- https://developer.android.com/training/implementing-navigation/ancestral.html -->
+        <!-- http://stackoverflow.com/a/14483595 -->
+
+        <activity
+            android:name=".About"
+            android:parentActivityName="info.theel0ja.kouluruoka.MainActivity"
+            android:label="@string/about">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="info.theel0ja.kouluruoka.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:parentActivityName="info.theel0ja.kouluruoka.MainActivity"
+            android:label="@string/settings">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="info.theel0ja.kouluruoka.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Archives"
+            android:parentActivityName="info.theel0ja.kouluruoka.MainActivity"
+            android:label="@string/archives">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="info.theel0ja.kouluruoka.MainActivity" />
+        </activity>
+
+        <!-- WIDGET -->
+        <!--
+        <receiver android:name=".Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <activity android:name=".WidgetConfigureActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        -->
     </application>
+
 </manifest>

@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Viikon kouluruoka</string>
+    <string name="about">Tietoa sovelluksesta</string>
+    <string name="elementary_school">Alakoulut</string>
+    <string name="secondary_school">Yläkoulut ja lukiot</string>
+    <string name="archives">Arkistot</string>
+    <string name="settings">Asetukset</string>
+    <string name="select_school">Valitse koulu</string>
+    <string name="play_store_btn">Arvostele Google Playssa</string>
+    <string name="version">"Versio: "</string>
+    <string name="configure_widget">Konfiguroi widgetti</string>
 </resources>

@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Skol Menyer</string>
+    <string name="about">Om programmet</string>
+    <string name="secondary_school">Högstadierna och gymnasierna</string>
+    <string name="elementary_school">Lågstadierna</string>
+    <string name="app_name">Veckans skolmat</string>
+    <string name="archives">Arkiverar</string>
+    <string name="settings">Inställningar</string>
+    <string name="select_school">Välj skola</string>
+    <string name="configure_widget">Konfigurera widgeten</string>
+    <string name="play_store_btn">Skriv recension på Google Play</string>
+    <string name="version">"Versionen: "</string>
 </resources>
