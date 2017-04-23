@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/* TODO: Use tabs for Archives */
 
 public class Archives extends AppCompatActivity {
     private WebView mWebView;
@@ -48,10 +48,6 @@ public class Archives extends AppCompatActivity {
                     // Force links and redirects to open in the WebView instead of in a browser
                     mWebView.setWebViewClient(new WebViewClient());
 
-                    // Enable Javascript
-                    WebSettings webSettingsA = mWebView.getSettings();
-                    webSettingsA.setJavaScriptEnabled(true);
-
                     // 4.0.3 and up - Use https version
                     // 4.0.3 and down - Use non-https version
                     if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1) {
@@ -72,10 +68,6 @@ public class Archives extends AppCompatActivity {
 
                     // Force links and redirects to open in the WebView instead of in a browser
                     mWebView.setWebViewClient(new WebViewClient());
-
-                    // Enable Javascript
-                    WebSettings webSettingsB = mWebView.getSettings();
-                    webSettingsB.setJavaScriptEnabled(true);
 
                     // 4.0.3 and up - Use https version
                     // 4.0.3 and down - Use non-https version

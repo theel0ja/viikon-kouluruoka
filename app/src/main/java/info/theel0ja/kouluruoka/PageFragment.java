@@ -1,13 +1,13 @@
 package info.theel0ja.kouluruoka;
 
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
-import android.webkit.WebSettings;
 import android.webkit.WebViewClient;
 
 import java.util.Calendar;
@@ -86,15 +86,12 @@ public class PageFragment extends Fragment {
             fab.setImageResource(R.drawable.ic_arrow_forward_white_24dp);
         }
         */
+        // TODO ^: implement prev/next page button
 
 
 
         // Force links and redirects to open in the WebView instead of in a browser
         mWebView.setWebViewClient(new WebViewClient());
-
-        // Enable Javascript
-        WebSettings webSettings = mWebView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
 
         // Use remote resource
         // 4.0.3 and up - Use https version
